@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "frimi01mod",
+	"version": "${version}",
+	"name": "Frimi01 mod",
+	"description": "This is a mod meant for prototyping and testing. It is not meant to serve as a product. If you are seeing this you are allowed to help with or view this code (presumably)!",
+	"authors": [
+		"Frimi01"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/frimi01mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.frimi01.frimi01mod.Frimi01Mod"
+		],
+
+		"client": [
+			"com.frimi01.frimi01mod.Frimi01ModClient"
+		],
+		"fabric-datagen": [
+			"com.frimi01.frimi01mod.Frimi01ModDataGenerator"
+		]
+	},
+	"mixins": [
+		"frimi01mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
