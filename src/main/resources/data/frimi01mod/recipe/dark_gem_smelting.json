@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "frimi01mod:dark_mineral",
+  "result": {
+    "id": "frimi01mod:dark_gem"
+  },
+  "experience": 0.1,
+  "cookingtime": 500
+}

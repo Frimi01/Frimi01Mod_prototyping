@@ -2,6 +2,7 @@ package com.frimi01.frimi01mod.item;
 
 import com.frimi01.frimi01mod.Frimi01Mod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.registry.FuelRegistryEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -33,9 +34,14 @@ public class ModItems {
     public static void registerModItems(){
         Frimi01Mod.LOGGER.info("Registering Mod Items for " + Frimi01Mod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(DARK_GEM);
-            fabricItemGroupEntries.add(DARK_MINERAL);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(groupEntries -> {
+            groupEntries.add(DARK_GEM);
+            groupEntries.add(DARK_MINERAL);
+        });
+
+        // 20 ticks = 1 second.
+        FuelRegistryEvents.BUILD.register((builder, context) -> {
+            builder.add(ModItems.DARK_MINERAL, 30 * 20);
         });
     }
 }
