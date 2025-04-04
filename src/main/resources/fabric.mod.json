@@ -3,7 +3,7 @@
 	"id": "frimi01mod",
 	"version": "${version}",
 	"name": "Frimi01 mod",
-	"description": "This is a mod meant for prototyping and testing. It is not meant to serve as a product. If you are seeing this you are allowed to help with or view this code (presumably)!",
+	"description": "This is a mod meant for prototyping and testing. It is not meant to serve as a product.",
 	"authors": [
 		"Frimi01"
 	],
