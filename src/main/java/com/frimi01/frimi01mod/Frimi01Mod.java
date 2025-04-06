@@ -1,5 +1,6 @@
 package com.frimi01.frimi01mod;
 
+import com.frimi01.frimi01mod.item.ModBlocks;
 import com.frimi01.frimi01mod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -18,6 +19,7 @@ public class Frimi01Mod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		LOGGER.info(Frimi01Mod.MOD_ID + " Initialize Complete!");
 	}
 }
