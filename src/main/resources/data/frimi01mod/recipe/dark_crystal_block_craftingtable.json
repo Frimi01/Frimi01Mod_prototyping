@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "frimi01mod:dark_gem"
+  },
+  "result": {
+    "id": "frimi01mod:dark_crystal_block",
+    "count": 1
+  }
+}
